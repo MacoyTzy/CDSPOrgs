@@ -1,0 +1,235 @@
+<?php 
+
+
+
+  session_start();
+
+
+
+   if (isset($_SESSION['Access']) && $_SESSION['Access'] == "BSA") {
+
+  	echo "";
+
+  } else{
+
+  		echo header("location:profile.php");
+
+  }
+
+
+
+  require 'connect.php';
+
+  require 'functions.php';
+
+
+
+  if(isset($_SESSION['username'], $_SESSION['password'])) {
+
+
+
+?>
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CDSP JPIA</title>
+		<link rel="shortcut icon" type="image/png" href="assets/favicons/jpia.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="main.css"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/jpia.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">CDSP Junior Philippine Institute of Accountants</a></h1>
+					<p>The organization of students in the field of accountancy in<br />
+					Colegio de San Pedro</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#three">Current Officers</a></li>
+						<li><a href="votingformjpia.php">JPIA Election</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						
+						<li><a href="https://www.facebook.com/Junior-Philippine-Institute-of-AccountantsCDSP-100304241954278/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>About CDSP JPIA</h2>
+										
+									<p style="text-align:justify">Is an academic organization that helps the BSA students to excel and develop their skills in the academic aspect.</p>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Current JPIA Officers</h3>
+									<p>This is our current CDSP JPIA officers for 2020-2021</p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>President</h4>
+												<p>Ms. Kimberly De Asis</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Vice-President</h4>
+												<p>Mr. Ramchan Siervo</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Secretary</h4>
+												<p>Ms. Andrea Jean Almendral</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Treasurer</h4>
+												<p>Ms. Kristine Joy Bartolata</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Auditor</h4>
+												<p>Ms. Daniela Mananghaya</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Academic Chair	</h4>
+												<p>Ms. Donna Jestre</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>Non Academic Chair</h4>
+												<p>Ms. Mhay Ann Recomendable</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>1st Year Representative</h4>
+												<p>Ms. Khoria Carla Sanidad</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>2nd Year Representative</h4>
+												<p>Ms. Ericka Nicole Gumilin</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>3rd Year Representative</h4>
+												<p>Ms. Julie Ann Atienza</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>4th Year Representative</h4>
+												<p>Mr. Renato Ranoco</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/avatar.png" alt="" /></a>
+											<div class="inner">
+												<h4>5th Year Representative</h4>
+												<p>Mr. Aldrin Esguerra</p>
+											</div>
+										</article>
+
+										
+												<p></p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+					</div>
+
+					<!-- Four -->
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Test</li><li>Design: <a href="http://palusot.com">hello mictest</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<?php
+
+
+
+
+
+  }  else {
+
+    header("location:index.php");
+
+    exit;
+
+  }
+
+
+
+  unset($_SESSION['prompt']);
+
+  mysqli_close($con);
+
+
+
+?>

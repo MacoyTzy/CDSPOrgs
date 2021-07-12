@@ -1,0 +1,11 @@
+@page
+{
+	size:A4; 
+	margin: 0;
+	padding: 10px;
+}
+#print-btn, #delete-btn, #edit-btn, #add-btn, #import-input, #import-btn, #export-btn
+{
+	display: none;
+	visibility: none;
+}
