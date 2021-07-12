@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About and Quick Guide</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">About</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <style>
+      div {
+           text-align: justify;
+            text-justify: inter-word;
+          }
+    </style>
+    <div class="container text-center">
+      <img src="images/cdsp.png" width="150" height="150">
+      <h1>CDSP Student Organization Information and Voting System</h1>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About The System</h2>
+          <p class="lead"></p></p>
+          Hello everyone! In behalf of Team Katagumpay, My Name is Marco from BSIT 1-42 of Colegio de San Pedro!
+As a Team Leader of this project, we are proudly to introduce to you our madely "CDSP Student Organization Information and Voting System".
+This voting system can help our co-students to view some basic information on an organization and to vote and also to the election admin can manage the
+election easily. <br><br> As an open-source project developed together with my helpful and hardworking teammates Andrei Leyva and Francis Yabes we are here to help
+you on how to use the system! <br> <br>
+
+Features: <br><br>
+-For Admin <br>
+*Can Add by Importing or Manual Adding Voters and modify them <br>
+*Can Add by Importing and Delete Candidate<br> 
+*Can monitor election status<br> 
+*Can print election data (Voters, Candidates, and Election Results)<br> <br>
+
+-For Voters <br>
+*Can View Basic Organization Information <br>
+*Can Vote <br><br>
+
+
+Note : <br>
+-For admin, sending voter's credentials can be done by installing an add-on in microsoft excel <br>
+which is kutools add-on we will have a tutorial video on how to use the add-on, but still we are trying our best to integrate it on the system thru phpmailer. <br>
+-For admin, the election tally can be refreshed manually by pressing "F5" button, however we are also still trying our best
+to make it automatically refreshed thru ajax. <br>
+-For Voters, in case you forgot the password you can message the election admin by clicking on the messenger icon to revert it to default password. <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Quick Guide Video</h2> <br>
+          For Admin <br>
+          <!--insert embedded youtube video here-->
+          For Voters <br>
+          <iframe width="380" height="300" src="https://www.youtube.com/embed/BpcJIuT9CcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution="page_inbox"
+    page_id="423533631744432">
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Team Katagumpay</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
