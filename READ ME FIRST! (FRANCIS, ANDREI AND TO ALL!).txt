@@ -1,0 +1,24 @@
+NOTES!!!!!
+
+CDSP Student Organization Information and Voting System
+Status : Stable
+Stable Version : 1.0 (FINAL BUILD)
+
+1. Voting form for JHS and ELEM are now live but still not working for now! (error with blablabla query still showing)
+2. You can see the other bugs on "Quick Guide" page. If you encounter other errors than all of these. Tell me WITH RESPECT..
+3. Please use the latest databases i included here to make these new stuff works. Delete the those old ones in your phymyadmin.
+4. The "csv props" folder contains the students and candidates csv ready-to-import files.
+
+
+
+Account credentials:
+For admin
+Username : admin_
+Password : admin_
+
+For voters:
+(whatever you see in the students database just use it.)
+
+
+GOOD LUCK TO ALL OF US ON JUNE 15!!!!!!!!!!!
+<3 <3 <3 <3
